@@ -1,8 +1,8 @@
-import type { Preview } from '@storybook/react';
+import type { Preview } from '@storybook/react'
 
-import { ThemeProvider, CssBaseline } from '@mui/material';
-import { withThemeFromJSXProvider } from '@storybook/addon-styling';
-import {theme} from "../src/styles/Theme";
+import { ThemeProvider, CssBaseline } from '@mui/material'
+import { withThemeFromJSXProvider } from '@storybook/addon-styling'
+import {theme} from "../src/styles/Theme"
 
 const preview: Preview = {
   parameters: {
@@ -26,6 +26,6 @@ const preview: Preview = {
       defaultTheme: 'light',
     }),
   ],
-};
+}
 
 export default preview;
