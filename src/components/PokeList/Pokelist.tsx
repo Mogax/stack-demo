@@ -7,9 +7,9 @@ import {PokemonCardType} from "./PokeCard/PokeCard.constant.ts";
 export const Pokelist = () => {
 
     const pokeList = useAtomValue(pokeListAtom)
-    console.log(pokeList)
+
     return (
-        <Box>
+        <Box sx={{display:'flex', flexWrap:'wrap', justifyContent:'center'}}>
             {pokeList && pokeList.map((p:PokemonCardType) => (
                 <PokeCard {...p} key={p.name.fr}/>
             ))}

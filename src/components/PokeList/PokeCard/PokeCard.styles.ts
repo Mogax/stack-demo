@@ -1,4 +1,7 @@
 export const styles = {
+    card:{
+        margin:2
+    },
     cardContent: {
         display: 'flex',
         alignItems: 'center',

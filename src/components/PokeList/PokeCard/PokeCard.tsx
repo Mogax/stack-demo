@@ -6,11 +6,11 @@ import {styles} from "./PokeCard.styles.ts";
 export const PokeCard = (props:PokemonCardType) => {
 
     const {pokemon, types, name} = props
-    const {typoName, boxName, boxType, imgType, nameLang, stackName, typeName, imgPokemon, cardContent} = styles
+    const {card, typoName, boxName, boxType, imgType, nameLang, stackName, typeName, imgPokemon, cardContent} = styles
     const [hover, setHover] = useState(false)
 
     return (
-        <Card>
+        <Card sx={card}>
             <CardContent sx={cardContent}>
                 <img
                     src={pokemon + (hover ? "shiny" : "regular") + ".png"}
