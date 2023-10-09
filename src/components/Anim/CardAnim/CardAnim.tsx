@@ -1,9 +1,9 @@
 import {useState} from "react"
 import {Button, Card, CardActions, CardContent, Typography} from "@mui/material"
 import {shakeAnimation, styles} from "./CardAnim.styles.ts"
-import {propsTypes} from "./CardAnim.constant.ts"
+import {CardAnimTypes} from "./CardAnim.constant.ts"
 
-export const CardAnim = (props: propsTypes) => {
+export const CardAnim = (props: CardAnimTypes) => {
 
     const {title, description, status} = props
     const {card, titleS, descriptionS, cardAction} = styles
@@ -11,8 +11,6 @@ export const CardAnim = (props: propsTypes) => {
     const [color, setColor] = useState('#FFFFFF')
     const [opacity, setOpacity] = useState(1)
     const [animation, setAnimation] = useState(false)
-
-    console.log()
 
     const handleStart = () => {
         switch (status) {

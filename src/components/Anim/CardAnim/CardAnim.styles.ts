@@ -16,7 +16,7 @@ export const shakeAnimation = keyframes`
   100% {
     transform: translateX(0);
   }
-`;
+`
 
 export const styles = {
     card: {
@@ -25,7 +25,8 @@ export const styles = {
         flexDirection: 'column',
         alignItems: 'center',
         borderRadius: 5,
-        transition: "0.5s"
+        transition: "0.5s",
+        margin:2
     },
     titleS:{
         textAlign: 'center',

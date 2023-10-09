@@ -1,6 +1,6 @@
 import {atom, Getter, Setter, WritableAtom} from "jotai/index";
 import {CSSProperties} from "react";
-import {optionsType} from "../../models/input.ts";
+import {optionsType} from "../../../models/input.ts";
 
 export type autocompleteType = {
     label:string,
