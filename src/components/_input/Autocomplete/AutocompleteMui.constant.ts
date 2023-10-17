@@ -71,7 +71,6 @@ export const makeAutocompletedAtom = (label:string, errors?:autocompleteErrorPar
             } else {
                 set(store, get(tempAtom).onChange(args))
             }
-
             over(get, set, args)
 
         }
@@ -86,8 +85,8 @@ export interface propsTypes {
     sx?:CSSProperties
 }
 
-export const [,testAtom] = makeAutocompletedAtom("testAtom")
-export const [,testNoEmptyAtom] = makeAutocompletedAtom("testAtom", {empty:true})
+export const [,testAtom] = makeAutocompletedAtom("PokeType")
+export const [,testNoEmptyAtom] = makeAutocompletedAtom("PokeType", {empty:true})
 
 export const testOptions = [
     {recordId:'1', label:'Value 1', id:"1"},
