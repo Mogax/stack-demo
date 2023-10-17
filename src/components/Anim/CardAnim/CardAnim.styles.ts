@@ -1,4 +1,7 @@
 import {keyframes} from "@emotion/react";
+import {theme} from "../../../styles/Theme.ts";
+
+const palette = theme.palette
 
 export const shakeAnimation = keyframes`
   0% {
@@ -33,13 +36,13 @@ export const styles = {
         marginBottom: 2,
         fontSize:24,
         fontWeight:"700",
-        color:"#AAB2FF",
+        color:palette.primary.main,
         textDecoration:"underline"
     },
     descriptionS: {
         textAlign: 'center',
         fontSize:16,
-        color:"#ECA0FF",
+        color:palette.secondary.main,
     },
     cardAction:{
         display:'flex',

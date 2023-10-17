@@ -7,11 +7,22 @@ declare module '@mui/material/Button' {
 }
 
 export const theme = createTheme({
+    palette:{
+        primary:{
+            main:"#AAB2FF"
+        },
+        secondary: {
+            main:"#ECA0FF"
+        },
+        success:{
+            main:'#84FFC9'
+        }
+    },
     components:{
         MuiTypography:{
-          defaultProps:{
-              fontFamily:"Kavoon",
-          }
+            defaultProps:{
+                fontFamily:"Kavoon",
+            }
         },
         MuiButton:{
             variants:[

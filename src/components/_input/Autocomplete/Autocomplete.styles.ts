@@ -1,3 +1,6 @@
+import {theme} from "../../../styles/Theme.ts";
+
+const palette = theme.palette
 export const styles = {
     autocomplete:{
         margin: 2,
@@ -9,11 +12,11 @@ export const styles = {
         }
     },
     divider:{
-        backgroundColor:'#AAB2FF',
+        backgroundColor:palette.primary.main,
         height:5
     },
     listItem:{
-        color:'#AAB2FF',
+        color:palette.primary.main,
         display:'flex',
         "&:hover":{
             color:'#FFFFFF',
@@ -34,7 +37,7 @@ export const styles = {
     },
     textfield:{
         fontFamily:"Kavoon",
-        color:'#ECA0FF',
+        color:palette.secondary.main,
         fontSize: 20,
     },
     inputAdornment:{

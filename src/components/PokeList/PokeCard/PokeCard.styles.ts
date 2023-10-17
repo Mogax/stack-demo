@@ -1,3 +1,6 @@
+import {theme} from "../../../styles/Theme.ts";
+
+const palette = theme.palette
 export const styles = {
     card:{
         margin:2
@@ -19,11 +22,11 @@ export const styles = {
     nameLang: {
         fontSize:24,
         marginRight:1,
-        color:'#AAB2FF'
+        color:palette.primary.main
     },
     typoName: {
         fontSize:24,
-        color:'#ECA0FF'
+        color:palette.secondary.main
     },
     boxType: {
         display:'flex',
@@ -35,7 +38,7 @@ export const styles = {
     },
     typeName: {
         fontSize:24,
-        color:'#AAB2FF',
+        color:palette.primary.main,
         textAlign:'center'
     }
 }

@@ -1,24 +1,28 @@
 import {Box, Stack, Typography} from "@mui/material";
 import {NavLink} from "react-router-dom";
 import {Avatar} from "./Avatar/Avatar.tsx";
+import {styles} from "./Header.styles.ts";
 
 export const Header = () => {
+
+    const {logo, logoContainer, container, nameContainer, secondaryLetter, primaryLetter, successLetter, stack, link, linkText} = styles
+
     return (
-        <Box sx={{display:'flex', alignItems:'center', justifyContent:'space-between'}}>
-            <Box sx={{display:'flex', alignItems:'center'}}>
-                <img src="/src/assets/logo.png" alt="logo" style={{width:40}}/>
-                <Box sx={{display:'flex', flexDirection:'row', marginLeft:1}}>
-                    <Typography sx={{fontSize:40, color:'#AAB2FF'}}>S</Typography>
-                    <Typography sx={{fontSize:40, color:'#84FFC9'}}>t</Typography>
-                    <Typography sx={{fontSize:40, color:'#ECA0FF'}}>a</Typography>
-                    <Typography sx={{fontSize:40, color:'#AAB2FF'}}>c</Typography>
-                    <Typography sx={{fontSize:40, color:'#ECA0FF'}}>k</Typography>
+        <Box sx={container}>
+            <Box sx={logoContainer}>
+                <img src="/src/assets/logo.png" alt="logo" style={logo}/>
+                <Box sx={nameContainer}>
+                    <Typography sx={primaryLetter}>S</Typography>
+                    <Typography sx={successLetter}>t</Typography>
+                    <Typography sx={secondaryLetter}>a</Typography>
+                    <Typography sx={primaryLetter}>c</Typography>
+                    <Typography sx={secondaryLetter}>k</Typography>
                 </Box>
 
             </Box>
-            <Stack sx={{margin:2}} spacing={1} direction={'row'}>
-                <NavLink to={'/animation'} style={{textDecoration:'none', color:'#AAB2FF'}}><Typography>Animation</Typography></NavLink>
-                <NavLink to={'/pokelist'} style={{textDecoration:'none', color:'#AAB2FF'}}><Typography>Pokelist</Typography></NavLink>
+            <Stack sx={stack} spacing={1} direction={'row'}>
+                <NavLink to={'/animation'} style={link}><Typography sx={linkText}>Animation</Typography></NavLink>
+                <NavLink to={'/pokelist'} style={link}><Typography sx={linkText}>Pokelist</Typography></NavLink>
             </Stack>
             <Avatar/>
         </Box>
